@@ -12,6 +12,7 @@ data/
 └── processed/
     ├── customer_pca.csv
     ├── customer_features.csv
+    ├── customer_features_transformed.csv
     └── customer_pca_all.csv
 ```
 
@@ -29,6 +30,7 @@ data/
 |---|---|---|
 | `processed/customer_pca.csv` | 4,143 customers x 5 PCA components | **all four algorithms**: this is what we cluster |
 | `processed/customer_features.csv` | the 12 readable features + `Country` + `IsOutlier` for all 4,362 customers | **all four algorithms**: to describe the clusters |
-| `processed/customer_pca_all.csv` | the same 5 components including the 219 extreme customers, + `IsOutlier` | **DBSCAN**: to test whether it finds the extreme customers as noise |
+| `processed/customer_features_transformed.csv` | the 12 features after the Yeo-Johnson transform, before PCA | **GMM**: for the cluster-profile heatmap |
+| `processed/customer_pca_all.csv` | the same 5 components including the 219 extreme customers, + `IsOutlier` | **DBSCAN and GMM**: to test how each handles the extreme customers |
 
 Source: Online Retail dataset ([UCI](https://archive.ics.uci.edu/dataset/352/online+retail)), as used in the Kaggle notebook [Customer Segmentation & Recommendation System](https://www.kaggle.com/code/farzadnekouei/customer-segmentation-recommendation-system).
