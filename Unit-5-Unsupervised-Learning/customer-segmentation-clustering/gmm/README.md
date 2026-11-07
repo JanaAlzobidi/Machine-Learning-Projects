@@ -3,22 +3,21 @@
 **Notebook:** [`gmm_customer_segmentation.ipynb`](gmm_customer_segmentation.ipynb), already run with all outputs.
 
 ## How it runs
-- Run it from this folder. It reads the raw data from `../data/raw/data.csv.gz`.
-- Part 1 repeats the shared preparation so the notebook also works on its own, then **checks that it reproduced `data/processed/customer_pca.csv` exactly**. The GMM labels therefore line up row by row with the other three algorithms.
+- Run it from this folder. It starts by reading the prepared files from `../data/processed/`, the same files the other three algorithms use, so the GMM labels line up row by row with theirs.
+- Only the product-suggestion section reads the raw file `../data/raw/data.csv.gz`, because it needs the individual invoice lines.
 - Results are saved in this folder.
 
 ## What is inside
-1. Shared preparation (the same steps as `../data/01_data_preparation.ipynb`, plus the check)
+1. Setup and loading the prepared files
 2. How GMM and the EM algorithm work, and how GMM differs from K-Means
-3. Choosing k and the covariance type with BIC and AIC (1-10 components x 4 covariance types)
-4. Stability across 10 random starts
-5. Final model, metrics, and a K-Means reference on the same data
-6. Clusters and their fitted ellipses on PC1/PC2
-7. Soft assignments: how sure the model is about each customer
-8. Sensitivity to noise: refitting with the extreme customers, and density as a noise score
-9. Cluster profiles and segment names
-10. Simple product suggestions per segment
-11. Strengths, weaknesses and key insights
+3. Choosing k and the covariance type with BIC and AIC (1-10 components x 4 covariance types), plus stability across 10 random starts
+4. Final model, metrics, and a K-Means reference on the same data
+5. Clusters and their fitted ellipses on PC1/PC2
+6. Soft assignments: how sure the model is about each customer
+7. Sensitivity to noise: refitting with the extreme customers, and density as a noise score
+8. Cluster profiles and segment names
+9. Simple product suggestions per segment
+10. Strengths, weaknesses and key insights
 
 ## Result in short
 | | |
