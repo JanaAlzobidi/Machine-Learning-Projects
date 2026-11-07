@@ -35,18 +35,6 @@ A mini project that studies how dimensionality reduction (PCA) affects clusterin
 - PCA made the results much easier to visualize.
 - K-Means after PCA is a good choice for this dataset: it gives almost the same results with only 2 features instead of 13.
 
-## How to Run
-1. Install the requirements:
-   ```bash
-   pip install numpy pandas matplotlib scikit-learn
-   ```
-2. Open the notebook:
-   ```bash
-   jupyter notebook Evaluating_Clustering_Before_and_After_PCA.ipynb
-   ```
-3. Run all cells from top to bottom.
-
-You can also open the notebook in Google Colab.
 
 ## Files
 - `Evaluating_Clustering_Before_and_After_PCA.ipynb`: the full project notebook (code, visualizations, analysis and key insights)
@@ -58,4 +46,4 @@ You can also open the notebook in Google Colab.
 | Jana | Data loading, preprocessing, K-Means before PCA |
 | Leen | PCA, K-Means after PCA, visualization |
 | Abdulrahman | Test set evaluation, ARI comparison, PCA components experiment |
-| Ahmed | DBSCAN comparison |
+| Ahmed | DBSCAN comparison, write the insights and Key Findings |
