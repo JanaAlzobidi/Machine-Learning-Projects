@@ -4,16 +4,16 @@ We segment the customers of a UK online gift retailer with **K-Means, DBSCAN, Hi
 
 | Algorithm | Folder | Owner | Status |
 |---|---|---|---|
-| K-Means | [`kmeans/`](kmeans/) | _name_ | in progress |
-| DBSCAN | [`dbscan/`](dbscan/) | _name_ | in progress |
-| Hierarchical | [`hierarchical/`](hierarchical/) | _name_ | in progress |
-| Gaussian Mixture Model | [`gmm/`](gmm/) | _name_ | done |
+| K-Means | [`kmeans/`](kmeans/) | LEEN |
+| DBSCAN | [`dbscan/`](dbscan/) | AHMAD | in progress |
+| Hierarchical | [`hierarchical/`](hierarchical/) | Abdulrahman |
+| Gaussian Mixture Model | [`gmm/`](gmm/) | JANA |
 
 ## Structure
 ```
 customer-segmentation-clustering/
 ├── data/            raw data, the preparation notebook, the prepared files + README
-├── kmeans/          instructions (README) → notebook + labels_kmeans.npy go here
+├── kmeans/          README → notebook + 
 ├── dbscan/          instructions (README) → notebook + labels_dbscan.npy go here
 ├── hierarchical/    instructions (README) → notebook + labels_hierarchical.npy go here
 ├── gmm/             GMM notebook, README and results
