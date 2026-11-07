@@ -27,8 +27,6 @@ data/
 ## Files
 | file | what it is | who uses it |
 |---|---|---|
-| `raw/data.csv.gz` | the original 541,909 invoice lines (UK online gift retailer, Dec 2010 - Dec 2011), compressed | the preparation notebook and the GMM notebook |
-| `01_data_preparation.ipynb` | the steps above; it reads the raw file and writes the files in `processed/` | already run, rerun only if the preparation changes |
 | `processed/customer_pca.csv` | 4,143 customers x 5 PCA components | **all four algorithms**: this is what we cluster |
 | `processed/customer_features.csv` | the 12 readable features + `Country` + `IsOutlier` for all 4,362 customers | **all four algorithms**: to describe the clusters |
 | `processed/customer_pca_all.csv` | the same 5 components including the 219 extreme customers, + `IsOutlier` | **DBSCAN**: to test whether it finds the extreme customers as noise |
