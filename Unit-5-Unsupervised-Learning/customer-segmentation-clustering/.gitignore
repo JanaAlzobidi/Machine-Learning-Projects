@@ -1,0 +1,13 @@
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# uncompressed raw data (the repo keeps data/raw/data.csv.gz)
+data/raw/*.csv
